@@ -10,7 +10,6 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mycityapp.databinding.FragmentHomeBinding
 import com.example.mycityapp.data.Category
-import com.example.mycityapp.data.Recommendation
 
 
 class HomeFragment : Fragment() {

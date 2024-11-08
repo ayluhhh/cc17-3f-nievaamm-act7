@@ -10,7 +10,6 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mycityapp.databinding.FragmentCategoryBinding
-import com.example.mycityapp.data.Category
 import com.example.mycityapp.data.Recommendation
 
 
@@ -45,16 +44,39 @@ class CategoryFragment : Fragment() {
     private fun getRecommendationsForCategory(category: String): List<Recommendation> {
         return when (category) {
             "Museums and Art Galleries" -> listOf(
-                Recommendation("BenCab"), Recommendation("Baguio Museum"), /* add more */
+                Recommendation("BenCab"),
+                Recommendation("BenCab"),
+                Recommendation("Baguio Museum"),
+                Recommendation("Tam-awan Village"),
+                Recommendation("Museo Kordilyera"),
+                Recommendation("Galleria de Potenciana by Arca’s Yard"),
+
             )
             "Coffee Shops" -> listOf(
-                Recommendation("Hoka Brew"), Recommendation("Foam Coffee"), /* add more */
+                Recommendation("Hoka Brew"),
+                Recommendation("Hoka Brew"),
+                Recommendation("Foam Coffee"),
+                Recommendation("Hatch Coffee"),
+                Recommendation("Seollem Cafe"),
+                Recommendation("Cafe by the Ruins"),
+
             )
             "Restaurants" -> listOf(
-                Recommendation("Grumpy Joe"), Recommendation("Lemon and Olives"), /* add more */
+                Recommendation("Grumpy Joe"),
+                Recommendation("Grumpy Joe"),
+                Recommendation("Lemon and Olives"),
+                Recommendation("Good Taste"),
+                Recommendation("Canto"),
+                Recommendation("Amare la Cucina"),
+                Recommendation("House of Yogurt Lover (H.O.Y)"),
+
             )
             "Parks and Nature Attractions" -> listOf(
-                Recommendation("Burnham Park"), Recommendation("Sunshine Park"), /* add more */
+                Recommendation("Burnham Park"),
+                Recommendation("Burnham Park"),
+                Recommendation("Sunshine Park"),
+                Recommendation("Maryknoll Ecological Sanctuary"),
+                Recommendation("Botanical Garden"),
             )
             else -> emptyList()
         }
